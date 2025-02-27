@@ -1,0 +1,396 @@
+/* Home */
+.logo {
+    margin: 75px 150px 0px;
+}
+
+.titlename {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: bold;
+    margin: -50px 0px 0px 230px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    width: 400px;
+    height: 30px;
+    overflow: hidden;
+    float: none;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 50px;
+    align-items: center;
+    margin: -15px 10px 10px 870px;
+}
+
+.navigation li {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    align-items: center;
+    padding-top: 2px;
+    margin-left: 17px;
+
+}
+
+.navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+}
+
+.navigation li a:hover:not(.active) {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.active {
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.date {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    margin: -80px 0px 0px 1350px;
+}
+
+.time {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    margin: -47px 0px 0px 1540px;
+}
+
+.home {
+    display: block;
+    margin: 200px 150px 0px 150px;
+    font-family: 'Playfair Display';
+    line-height: .5;
+}
+
+.home p {
+    width: 865px;
+    text-align: justify;
+}
+
+.myDPHome {
+    width: 462px;
+    height: 616px;
+    margin: -350px 0px 0px 1000px;
+}
+
+.connectButton {
+    display: inline-block;
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    height: 30px;
+    width: 221px;
+    color: rgba(0, 136, 255, 1);
+    text-align: center;
+    letter-spacing: 5%;
+    border: 2px solid rgba(0, 136, 255, 1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.trioBody {
+    padding-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Open Sans';
+    color: rgba(143, 143, 143, 1);
+    font-style: italic;
+}
+
+.trioBody img {
+    width: 290px;
+    height: 205px;
+    padding: 25px;
+}
+
+.design p, .code p, .data p {
+    font-style: normal;
+    width: 290px;
+    padding: 25px;
+}
+
+.design {
+    width: 342px;
+    height: 438px;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+}
+
+.code {
+    width: 342px;
+    height: 438px;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+}
+
+.data {
+    width: 342px;
+    height: 438px;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+}
+
+.design, .code, .data  {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.appleLink:link, .victoriaLink:link {
+    text-decoration: none;
+    color: rgba(0, 136, 255, 1);
+}
+
+.appleLink:visited, .victoriaLink:visited {
+    text-decoration: none;
+    color: rgba(0, 136, 255, 1);
+}
+
+.appleLink:hover, .victoriaLink:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* About */
+.myDPAbout {
+    margin: 150px 150px 0px 130px;
+}
+
+.myDPAboutSection {
+    height: 462px;
+    height: 616px;
+}
+
+.about {
+    margin: -680px 0px 0px 750px;
+    width: 828px;
+    text-align: justify;
+}
+
+.about p {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    text-align: justify;
+    width: 828px;
+}
+
+.myPassionBody {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    width: 1428px;
+    text-align: justify;
+    margin: 200px 150px 0px 150px;
+}
+
+.myPassion {
+    width: 1428px;
+    height: 603px;
+    margin-top: 50px;
+}
+
+.myPicsBody {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    width: 1428px;
+    text-align: justify;
+    margin: 100px 150px 50px 150px;
+}
+
+.myPics {
+    width: 1428px;
+    height: 1452px;
+    margin-top: 50px;
+}
+
+/* Projects */
+.welcomeBody {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    margin: 150px 150px 150px;
+}
+
+.professionalExperiences {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.wipro, .wiproAndGreatLearning {
+    width: 1010px;
+    text-align: justify;
+}
+
+.projects {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    margin: 100px 150px 50px 150px;
+}
+
+.projectEmotionDetection {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 20px 10px 20px;
+}
+
+.projectML {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 10px 10px 0px;
+    margin: -492px 20px 0px 730px;
+}
+
+.projectPython {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 20px 10px 20px;
+    margin-top: 50px;
+}
+
+.projectTableau {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 20px 10px 20px;
+    margin: -492px 20px 0px 730px;
+}
+
+.projectAgricultureIV-I {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 20px 10px 20px;
+    margin-top: 50px;
+}
+
+.projectAgricultureIV-II {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 20px;
+    width: 650px;
+    height: 455px;
+    text-align: justify;
+    padding: 28px 20px 10px 20px;
+    margin: -492px 20px 0px 730px;
+}
+
+/* Contact */
+.contact {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: rgba(143, 143, 143, 1);
+    margin: 200px 150px 300px 150px;
+    width: 650px;
+    height: 170px;
+    text-align: justify;
+}
+
+.contact p {
+    font-style: italic;
+}
+
+.formField {
+    display: block;
+    margin: -470px 0px 0px 1075px;
+}
+
+.labelField {
+    background-color: white;
+    font-family: 'Open Sans';
+    color: rgba(143, 143, 143, 1);
+    font-weight: bold;
+    width: 100px;
+}
+
+.inputField {
+    background-color: white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 100;
+    width: 463px;
+    max-width: 463px;
+    height: 60px;
+    padding-left: 35px;
+    border: 1px solid rgba(143, 143, 143, 1);
+    border-radius: 30px;
+}
+
+.sendMessageButton {
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 550;
+    font-size: 15px;
+    color: rgba(23, 147, 255, 1);
+    letter-spacing: 5%;
+    width: 222px;
+    height: 30px;
+    border: 0.5px solid rgba(0, 136, 255, 1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+/* footer */
+footer {
+    margin-bottom: 20px;   
+}
+
+.horizontalLine {
+    border-bottom: 1px solid rgba(196, 193, 193, 1);
+    display: block;
+    margin: 0px 150px 10px 150px;
+}
+
+footer p{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    display:inline-block;
+    color: rgba(143, 143, 143, 1);
+    margin: 0px 150px 10px 145px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+}
