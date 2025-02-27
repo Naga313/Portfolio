@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/title-logo.ico">
+    <title>Contact - NAGA SAI</title>
+    <link rel="icon" type="image/x-icon" href="Images/title-logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="navigation">
+        <img class="logo" src=Images/nagasai-logo.svg alt="logo">
+        <p class="titlename">NAGA SAI</p>
+        <ul>
+            <li><a href="Home.html" target="_self">Home</a></li>
+            <li><a href="About_Me.html" target="_self">About</a></li>
+            <li><a href="Projects.html" target="_self">Projects</a></li>
+            <li><a class="active" href="Contact.html" target="_self">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1bvZk1jTHT2WCZVUYlTmIERAm7seQs23c/view?usp=sharing" target="_blank">Resume</a></li>
+    </div>
+    <div class="date">
+        <p id="day"></p>&nbsp;
+        <p id="date"></p>&nbsp;
+        <p id="month"></p>&nbsp;
+        <p id="year"></p>&nbsp;
+    </div>
+    <div class="time">
+        <p id="hour"></p>&nbsp;
+        <p id="min"></p>
+    </div>
+    <div class="contact">
+        <p style="width: 900px; font-size: 40px; font-style: normal; font-weight: 600;">Bring Your Ideas to Life-Say Hello!</p>
+        <p>"I'd love to hear from you! Feel free to reach out via the form or connect with me on 
+            <a style="text-decoration: none; color: rgba(143, 143, 143, 1);" href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><b>LinkedIn</b></a> for a chat." 😊</p>
+    </div>
+    <form class="formField" action="">
+        <label class="labelField" for="name">Name</label><br><br>
+        <input class="inputField" type="text" id="name" name="name" placeholder="What should I call you?"><br><br>
+        <label class="labelField" for="email">Email</label><br><br>
+        <input class="inputField" type="text" id="email" name="email" placeholder="Enter your best email"><br><br>
+        <label class="labelField" for="message">Your Message</label><br><br>
+        <input class="inputField" style="height: 300px; padding-top: 19px; padding-left: 35px;" type="text" id="message" name="message" placeholder="Let's create something amazing-drop me a message!"><br><br><br>
+        <button class="sendMessageButton" onclick="alertFunction()">SEND MESSAGE</button><br><br><br><br><br>
+    </form>
+    <script>
+        const d = new Date();
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", 
+        "Oct", "Nov", "Dec"];
+        const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let month = months[d.getMonth()];
+        let day = days[d.getDay()];
+        document.getElementById("day").innerHTML = day;
+        document.getElementById("date").innerHTML = d.getDate();
+        document.getElementById("month").innerHTML = month;
+        document.getElementById("year").innerHTML = d.getFullYear();
+        document.getElementById("hour").innerHTML = d.getHours() + ":";
+        document.getElementById("min").innerHTML = d.getMinutes();
+        function alertFunction() {
+            alert("Thank you! Your message has been delivered successfully.\nI'll get back to you soon!")
+        }
+    </script>
+</body>
+<footer>
+    <span class="horizontalLine"></span>
+    <p>Copyright © 2025 Naga Sai Sravan. Let's create together!</p>
+    <p>Made with ❤️.</p>
+    <a href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><img src="Images/linkedin.svg" alt="LinkedIn"></a>
+    <a href="#Insta"target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
+    <a href="mailto:nagasai313@gmail.com?subject=Inspired%20by%20Your%20Work%20-%20Let's%20Talk" 
+    target="_blank"><img src="Images/gmail.svg" alt="Gmail"></a>
+    <a href="https://github.com/Naga313" target="_blank"><img src="Images/github.svg" alt="GitHub"></a>
+    <p> India | United States</p>
+</footer>
+</html>
