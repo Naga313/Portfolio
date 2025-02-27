@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/title-logo.ico">
+    <title>NAGA SAI - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Images/title-logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="navigation">
+        <img class="logo" src=Images/nagasai-logo.svg alt="logo">
+        <p class="titlename">NAGA SAI</p>
+        <ul>
+            <li><a class="active" href="Home.html" target="_self">Home</a></li>
+            <li><a href="About_Me.html" target="_self">About</a></li>
+            <li><a href="Projects.html" target="_self">Projects</a></li>
+            <li><a href="Contact.html" target="_self">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1bvZk1jTHT2WCZVUYlTmIERAm7seQs23c/view?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+        <div class="date">
+            <p id="day"></p>&nbsp;
+            <p id="date"></p>&nbsp;
+            <p id="month"></p>&nbsp;
+            <p id="year"></p>&nbsp;
+        </div>
+        <div class="time">
+            <p id="hour"></p>&nbsp;
+            <p id="min"></p>
+        </div>
+    </div>
+    <div class="home">
+        <p style="font-size: 32px; font-weight: bold;">Hello!</p>
+        <p style="font-size: 48px; ">I'm <b style="color: rgba(0, 136, 255, 1);">NAGA SAI SRAVAN REDROWTHU</b>,</p>
+        <p style="font-size: 36px;"><b>A Passionate AI Enthusiast!</b></p>
+        <p style="font-size: 24px; font-family: 'Open Sans'; color: rgba(143, 143, 143, 1); line-height: normal;">
+            I'm a Master of Science student in Data Science at the University of Massachusetts Dartmouth.</p>
+        <img class="myDPHome" src="Images/my-pic.png" alt="My DP">
+        <a href="Contact.html"><button class="connectButton" style="color: rgba(23, 147, 255, 1);">LET'S CONNECT</button></a>
+    </div>
+    <div class="trioBody">
+        <h1 style="font-style: normal; font-family: 'Playfair Display'; color: black;">Design, Code, and Data: My Creative Trio</h1>
+        <p style="width: 1428px; font-size: 24px; padding-top: 50px; padding-bottom: 15px; text-align: justify;">"I love exploring the sweet spot between data, code, and design-where logic meets creativity! 
+            Whether I'm diving into datasets, building seamless web experiences, or designing engaging visuals, 
+            I'm always excited to craft solutions that blend function with aesthetics."</p>
+        <div class="design">
+            <img src="Images/design.png" alt="designPic">
+            <p>I bring ideas to life through digital design and user-friendly experiences, making sure every pixel and interaction feels just right.</p>
+        </div>
+        <div class="code">
+            <img src="Images/code.png" alt="codePic">
+            <p>Whether it's building a robust backend or optimizing a system, I enjoy crafting clean, efficient, and scalable solutions that just work.</p>
+        </div>
+        <div class="data">
+            <img src="Images/data.png" alt="dataPic">
+            <p>I love uncovering patterns in data and transforming numbers into insights using Python, SQL, and machine learning.</p>
+        </div>
+        <p style="margin-top: 50px;">"Inspired by <a class="appleLink" href="https://www.apple.com" target="_blank"><strong>Apple</strong></a>, 
+            <a class="victoriaLink" href="https://victoriatu.info/?_gl=1*dy5u4c*_gcl_au*MzA0NjExNTI5LjE3MzcxNzYxMTc." target="_blank"><strong>Victoria</strong></a>. 
+            Big thanks for the creativity!"</p>
+        <p style="float: right; font-style: normal;">Portfolio Launched on Feb 27, 2025! Last modified on February 2025.</p>
+        <p style="margin: 30px 0px 50px 0px; font-style: normal;"><i><b>"Design is intelligence made visible."</b></i> - Alina Wheeler 🎨✨</p>
+    </div>
+    <script>
+        const d = new Date();
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", 
+        "Oct", "Nov", "Dec"];
+        const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let month = months[d.getMonth()];
+        let day = days[d.getDay()];
+        document.getElementById("day").innerHTML = day;
+        document.getElementById("date").innerHTML = d.getDate();
+        document.getElementById("month").innerHTML = month;
+        document.getElementById("year").innerHTML = d.getFullYear();
+        document.getElementById("hour").innerHTML = d.getHours() + ":";
+        document.getElementById("min").innerHTML = d.getMinutes();
+    </script>
+</body>
+<footer>
+    <span class="horizontalLine"></span>
+    <p>Copyright © 2025 Naga Sai Sravan. Let's create together!</p>
+    <p>Made with ❤️.</p>
+    <a href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><img src="Images/linkedin.svg" alt="LinkedIn"></a>
+    <a href="#Insta"target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
+    <a href="mailto:nagasai313@gmail.com?subject=Inspired%20by%20Your%20Work%20-%20Let's%20Talk" 
+    target="_blank"><img src="Images/gmail.svg" alt="Gmail"></a>
+    <a href="https://github.com/Naga313" target="_blank"><img src="Images/github.svg" alt="GitHub"></a>
+    <p> India | United States</p>
+</footer>
+</html>
