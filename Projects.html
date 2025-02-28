@@ -30,8 +30,7 @@
         <p id="year"></p>&nbsp;
     </div>
     <div class="time">
-        <p id="hour"></p>&nbsp;
-        <p id="min"></p>
+        <p id="hour_min"></p>
     </div>
     <div class="welcomeBody">
         <h1 style="font-family: 'Playfair Display'; color: black; text-align: center;">Welcome to my work portfolio!</h1>
@@ -117,12 +116,16 @@
         const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         let month = months[d.getMonth()];
         let day = days[d.getDay()];
+        let hours = d.getHours();
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const minutes = d.getMinutes().toString().padStart(2, '0');
+        hours = hours % 12;
+        hours = hours ? hours : 12;
         document.getElementById("day").innerHTML = day;
         document.getElementById("date").innerHTML = d.getDate();
         document.getElementById("month").innerHTML = month;
         document.getElementById("year").innerHTML = d.getFullYear();
-        document.getElementById("hour").innerHTML = d.getHours() + ":";
-        document.getElementById("min").innerHTML = d.getMinutes();
+        document.getElementById("hour_min").innerHTML = `${hours}:${minutes} ${ampm}`;
     </script>
 </body>
 <footer>
@@ -130,7 +133,7 @@
     <p>Copyright © 2025 Naga Sai Sravan. Let's create together!</p>
     <p>Made with ❤️.</p>
     <a href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><img src="Images/linkedin.svg" alt="LinkedIn"></a>
-    <a href="#Insta"target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/_lover_of_duke_?igsh=MXAydTBsNTY0YXJjYw%3D%3D&utm_source=qr" target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
     <a href="mailto:nagasai313@gmail.com?subject=Inspired%20by%20Your%20Work%20-%20Let's%20Talk" 
     target="_blank"><img src="Images/gmail.svg" alt="Gmail"></a>
     <a href="https://github.com/Naga313" target="_blank"><img src="Images/github.svg" alt="GitHub"></a>
