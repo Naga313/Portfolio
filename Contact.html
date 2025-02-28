@@ -29,23 +29,23 @@
         <p id="year"></p>&nbsp;
     </div>
     <div class="time">
-        <p id="hour"></p>&nbsp;
-        <p id="min"></p>
+        <p id="hour_min"></p>
     </div>
     <div class="contact">
         <p style="width: 900px; font-size: 40px; font-style: normal; font-weight: 600;">Bring Your Ideas to Life-Say Hello!</p>
         <p>"I'd love to hear from you! Feel free to reach out via the form or connect with me on 
             <a style="text-decoration: none; color: rgba(143, 143, 143, 1);" href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><b>LinkedIn</b></a> for a chat." 😊</p>
     </div>
-    <form class="formField" action="">
+    <form class="formField" id="contactForm">
         <label class="labelField" for="name">Name</label><br><br>
-        <input class="inputField" type="text" id="name" name="name" placeholder="What should I call you?"><br><br>
+        <input class="inputField" type="text" id="name" name="name" required placeholder="What should I call you?"><br><br>
         <label class="labelField" for="email">Email</label><br><br>
-        <input class="inputField" type="text" id="email" name="email" placeholder="Enter your best email"><br><br>
+        <input class="inputField" type="text" id="email" name="email" required placeholder="Enter your best email"><br><br>
         <label class="labelField" for="message">Your Message</label><br><br>
-        <input class="inputField" style="height: 300px; padding-top: 19px; padding-left: 35px;" type="text" id="message" name="message" placeholder="Let's create something amazing-drop me a message!"><br><br><br>
-        <button class="sendMessageButton" onclick="alertFunction()">SEND MESSAGE</button><br><br><br><br><br>
+        <input class="inputField" style="height: 300px; padding-top: 19px; padding-left: 35px;" type="text" id="message" name="message" required placeholder="Let's create something amazing-drop me a message!"><br><br><br>
+        <button class="sendMessageButton" type="submit">SEND MESSAGE</button><br><br><br><br><br>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         const d = new Date();
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", 
@@ -53,15 +53,39 @@
         const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         let month = months[d.getMonth()];
         let day = days[d.getDay()];
+        let hours = d.getHours();
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const minutes = d.getMinutes().toString().padStart(2, '0');
+        hours = hours % 12;
+        hours = hours ? hours : 12;
         document.getElementById("day").innerHTML = day;
         document.getElementById("date").innerHTML = d.getDate();
         document.getElementById("month").innerHTML = month;
         document.getElementById("year").innerHTML = d.getFullYear();
-        document.getElementById("hour").innerHTML = d.getHours() + ":";
-        document.getElementById("min").innerHTML = d.getMinutes();
-        function alertFunction() {
-            alert("Thank you! Your message has been delivered successfully.\nI'll get back to you soon!")
-        }
+        document.getElementById("hour_min").innerHTML = `${hours}:${minutes} ${ampm}`;
+        // Email
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.init("sTNXVD961aojEPVyt");
+
+        const serviceID = "service_09t4dfu";
+        const templateID = "template_q92p6ua";
+
+        const templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(response => {
+                alert("Thank you! Your message has been delivered successfully.\nI'll get back to you soon!");
+            }, error => {
+                alert("Failed to send message. Please try again.");
+                console.error("EmailJS Error:", error);
+            });
+        });
     </script>
 </body>
 <footer>
@@ -69,7 +93,7 @@
     <p>Copyright © 2025 Naga Sai Sravan. Let's create together!</p>
     <p>Made with ❤️.</p>
     <a href="https://www.linkedin.com/in/naga-sai-sravan" target="_blank"><img src="Images/linkedin.svg" alt="LinkedIn"></a>
-    <a href="#Insta"target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/_lover_of_duke_?igsh=MXAydTBsNTY0YXJjYw%3D%3D&utm_source=qr" target="_blank"><img src="Images/instagram.svg" alt="Instagram"></a>
     <a href="mailto:nagasai313@gmail.com?subject=Inspired%20by%20Your%20Work%20-%20Let's%20Talk" 
     target="_blank"><img src="Images/gmail.svg" alt="Gmail"></a>
     <a href="https://github.com/Naga313" target="_blank"><img src="Images/github.svg" alt="GitHub"></a>
